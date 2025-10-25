@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -13,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem"
@@ -22,14 +29,9 @@
             required
             class="instructions"
           />
-          <input type="submit"
-          class="submit-button" />
+          <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The first line of the poem will appear here
-          <br />
-          The second line of the poem will appear here
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
