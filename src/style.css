@@ -63,6 +63,10 @@ a {
   padding: 20px;
 }
 
+.poem strong {
+  color: #885df1;
+}
+
 footer {
   font-size: 12px;
   margin-top: 30px;
